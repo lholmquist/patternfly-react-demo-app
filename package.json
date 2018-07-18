@@ -40,7 +40,7 @@
   "scripts": {
     "copy-fonts": "ncp node_modules/patternfly/dist/fonts src/fonts",
     "copy-img": "ncp node_modules/patternfly/dist/img src/img",
-    "build-css": "cross-var \"node-sass-chokidar ./src/ --output-style compressed $npm_package_sassIncludes_src $npm_package_sassIncludes_patternfly $npm_package_sassIncludes_patternflyReact $npm_package_sassIncludes_bootstrap $npm_package_sassIncludes_fontAwesome -o ./src/\"",
+    "build-css": "cross-var \"node-sass-chokidar ./src/ --output-style compressed -o ./src/\"",
     "watch-css": "yarn build-css && cross-var \"node-sass-chokidar src/ --output-style compressed $npm_package_sassIncludes_src $npm_package_sassIncludes_patternfly $npm_package_sassIncludes_patternflyReact $npm_package_sassIncludes_bootstrap $npm_package_sassIncludes_fontAwesome -o src/ --watch --recursive\"",
     "start-js": "react-scripts start",
     "build-js": "react-scripts build",
