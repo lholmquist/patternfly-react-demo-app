@@ -24,6 +24,11 @@ const initialState = {
   }
 };
 
+// reset initial state to avoid login for now
+initialState.session.authorized = true;
+initialState.session.username = 'developer';
+initialState.session.email = 'developer@redhat.com';
+
 const userReducers = (state = initialState, action) => {
   switch (action.type) {
     // Error/Rejected
